@@ -19,8 +19,9 @@ import re
 import base64
 
 # --- CONFIGURATION ---
-DB_PATH = "evolution_data.db" # Modifié temporairement pour le Cloud en attendant demain
-LOGO_PATH = "https://ibb.co/mrfgLgxx"
+# --- CONFIGURATION ---
+DB_PATH = "evolution_data.db"
+LOGO_PATH = "Gemini_Generated_Image_.png"
 
 # --- STYLE CSS INTEGRAL ---
 st.markdown("""
@@ -112,8 +113,8 @@ st.set_page_config(page_title="TrainSmart-dz v7.1", layout="wide")
 init_db()
 
 with st.sidebar:
-    if LOGO_PATH:
-        st.image(LOGO_PATH, use_container_width=True)
+    if os.path.exists(LOGO_PATH):
+         st.image(LOGO_PATH, use_container_width=True)
     st.header("👤 Profil Athlète")
     prenom = st.text_input("Prénom", "Athlète")
     nom = st.text_input("Nom", "Expert")
