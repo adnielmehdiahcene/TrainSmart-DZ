@@ -113,10 +113,7 @@ init_db()
 
 with st.sidebar:
     if os.path.exists(LOGO_PATH):
-        try:
-            img_64 = get_base64_of_bin_file(LOGO_PATH)
-            st.markdown(f'<img src="data:image/png;base64,{img_64}" class="sidebar-logo">', unsafe_allow_html=True)
-        except: pass
+        st.image(LOGO_PATH, use_container_width=True)
     st.header("👤 Profil Athlète")
     prenom = st.text_input("Prénom", "Athlète")
     nom = st.text_input("Nom", "Expert")
