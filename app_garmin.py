@@ -112,7 +112,7 @@ st.set_page_config(page_title="TrainSmart-dz v7.1", layout="wide")
 init_db()
 
 with st.sidebar:
-    if os.path.exists(LOGO_PATH):
+    if LOGO_PATH:
         st.image(LOGO_PATH, use_container_width=True)
     st.header("👤 Profil Athlète")
     prenom = st.text_input("Prénom", "Athlète")
