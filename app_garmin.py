@@ -20,7 +20,7 @@ import base64
 
 # --- CONFIGURATION ---
 DB_PATH = "evolution_data.db" # Modifié temporairement pour le Cloud en attendant demain
-LOGO_PATH = "https://raw.githubusercontent.com/adnielmehdiahcene/TrainSmart-DZ/main/Gemini_Generated_Image_.png"
+LOGO_PATH = "https://ibb.co/mrfgLgxx"
 
 # --- STYLE CSS INTEGRAL ---
 st.markdown("""
